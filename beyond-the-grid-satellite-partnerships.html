@@ -42,19 +42,16 @@
     .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; }
     footer { text-align: center; padding: 2rem; color: #999; font-size: 0.85rem; }
     
-body.main-page .content-wrapper {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    gap: 3rem;
-    align-items: start;
+.posts-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
 }
-
-.anchor-post-container {
-    grid-column: 1;
+.anchor-post {
+  grid-column: 1 / 2;
 }
-
-.briefs-container {
-    grid-column: 2;
+.briefs-list {
+  grid-column: 2 / 3;
 }
 
   </style>
