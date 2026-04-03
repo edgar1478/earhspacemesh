@@ -42,7 +42,21 @@
     .post-image img { width: 100%; display: block; border-radius: 6px; }
     .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; }
     footer { text-align: center; padding: 2rem; color: #999; font-size: 0.85rem; }
-    .anchor-post { display: flex; flex-direction: row; align-items: flex-start; gap: 1.5rem; } .anchor-post .feature-image { flex: 1; max-width: 40%; } .anchor-post .post-content { flex: 2; }
+    
+.layout-anchor-feature-image-left .post-card.anchor {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.layout-anchor-feature-image-left .post-card.anchor .feature-image {
+  grid-column: 1;
+  width: 100%;
+}
+.layout-anchor-feature-image-left .post-card.anchor .post-content-container {
+  grid-column: 2;
+}
+
   </style>
 </head>
 <body>
