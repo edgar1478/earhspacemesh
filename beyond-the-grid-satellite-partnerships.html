@@ -17,6 +17,7 @@
     .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
     @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
     .anchor-card { background: #fff; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); margin-bottom: 2rem; }
+    .anchor-image { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem; }
     .anchor-card h2 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--primary); }
     .anchor-card .meta { font-size: 0.85rem; color: #888; margin-bottom: 1rem; }
     .anchor-card .excerpt { font-size: 1.05rem; }
@@ -35,6 +36,9 @@
     article .meta { font-size: 0.85rem; color: #888; margin-bottom: 1.5rem; }
     article .content { font-size: 1.05rem; }
     article .content p { margin-bottom: 1rem; }
+    article .content h2, article .content h3 { color: var(--primary); margin: 1.5rem 0 0.75rem; }
+    .post-image { margin: 0 0 1.5rem; }
+    .post-image img { width: 100%; display: block; border-radius: 6px; }
     .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.9rem; }
     footer { text-align: center; padding: 2rem; color: #999; font-size: 0.85rem; }
     
@@ -47,9 +51,13 @@
   <div class="container">
     <a href="index.html" class="back-link">← Back to all posts</a>
     <article>
+      <figure class="post-image"><img src="https://nanobanana.com/api/v1/render/beyond-the-grid-satellite-mesh-hero.png" alt="A futuristic, cinematic view of a smartphone on a dark surface, projecting a glowing data beam into the night sky to connect with an orbital satellite constellation over the Earth's illuminated curve." loading="lazy" decoding="async"></figure>
       <h1>Beyond the Grid: How Satellite Partnerships Are Rewriting the Rules of Global Connectivity</h1>
       <div class="meta">April 2, 2026 · <span style="background:#eee;padding:2px 8px;border-radius:12px;font-size:0.8rem;">Final draft</span></div>
-      <div class="content"><p>![A futuristic, cinematic view of a smartphone on a dark surface, projecting a glowing data beam into the night sky to connect with an orbital satellite constellation over the Earth's illuminated curve.](https://nanobanana.com/api/v1/render/beyond-the-grid-satellite-mesh-hero.png)</p><p><h1>Beyond the Grid: How Satellite Partnerships Are Rewriting the Rules of Global Connectivity</h1></p><p>For decades, "dead zones" were an accepted reality of mobile life. If you weren't near a tower, you weren't on the grid. But a quiet revolution is happening above our heads...</p></div>
+      <div class="content"><h1>Beyond the Grid: How Satellite Partnerships Are Rewriting the Rules of Global Connectivity</h1>
+<p>For decades, &quot;dead zones&quot; were an accepted reality of mobile life. If you weren't near a tower, you weren't on the grid. But a quiet revolution is happening above our heads.</p>
+<p>Today, the line between terrestrial and celestial connectivity is blurring. We're seeing unprecedented partnerships between handset manufacturers and satellite service providers. Whether it’s emergency SOS features or full-scale data roaming, the goal is simple: total global coverage, no towers required.</p>
+<p>This isn't just a win for remote hikers; it's a fundamental shift in how we think about infrastructure. When the sky becomes the network, the grid as we know it is no longer the limit. It’s about more than just convenience—it's about a resilient, truly global communication mesh that leaves no one behind, regardless of geography.</p></div>
     </article>
   </div>
   <footer>© 2026 The Earth Space Mesh</footer>
