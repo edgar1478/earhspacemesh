@@ -15,8 +15,16 @@
     .site-header h1 { font-size: 2.2rem; margin-bottom: 0.3rem; }
     .site-header p { opacity: 0.8; font-size: 1rem; }
     .container { max-width: var(--max-w); margin: 0 auto; padding: 2rem 1rem; }
-    .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
-    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+    .layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr); gap: 2rem; align-items: start; }
+    .layout-main { min-width: 0; }
+    .layout-main > * + * { margin-top: 2rem; }
+    .layout.layout-anchor-left .layout-main > * + * { margin-top: 1.25rem; }
+    .layout.layout-anchor-left .anchor-card { margin-bottom: 0; }
+    .sidebar { min-width: 0; }
+    @media (max-width: 768px) {
+      .layout { grid-template-columns: 1fr; }
+      .layout-main > * + * { margin-top: 1rem; }
+    }
     .anchor-card { background: #fff; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); margin-bottom: 2rem; }
     .anchor-image { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 1rem; }
     .anchor-card h2 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--primary); }
@@ -70,9 +78,14 @@
         <div class="excerpt">Beyond the Grid: How Satellite Partnerships Are Rewriting the Rules of Global Connectivity For decades, &quot;dead zones&quot;—those vast stretches of rural highways, remote mountain ranges, and open oceans where cellular signals go to die—have been an accepted limitation of global travel and work. But a tect…</div>
         <p style="margin-top:1rem"><a href="beyond-the-grid-satellite-partnerships.html">Read more →</a></p>
       </div>
-    <div class="layout">
-      <main>
+    <div class="layout layout-anchor-above">
+      <main class="layout-main">
+        
         <ul class="post-list"><li>
+        <h3><a href="topic-focus.html">Topic Focus</a></h3>
+        <div class="meta">April 5, 2026</div>
+      </li>
+<li>
         <h3><a href="dead-zones-relic-of-the-past.html">LinkedIn Post: Beyond the Grid</a></h3>
         <div class="meta">April 2, 2026</div>
       </li></ul>
